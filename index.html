@@ -19,11 +19,15 @@
     <script>
         $(document).ready(function() {
             $('.sidenav').sidenav();
-            $('.slider').slider( {indicators:false} );
+            $('.slider').slider({
+                indicators: false
+            });
             //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
             $('.scrollspy').scrollSpy()
         });
-
+        $(document).ready(function() {
+            $('.datepicker').datepicker();
+        });
     </script>
 </head>
 
@@ -55,27 +59,27 @@
     <section class="slider">
         <ul class="slides">
             <li>
-                <img src="Technology-Consultant01.jpg"> <!-- random image -->
+                <img src="Sax.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h1>Cody Consulting!</h1>
-                    <h5 class="light grey-text text-lighten-3">World Class Expert!</h5>
+                    <h5 class="light grey-text text-lighten-3">I Play The Saxophone</h5>
                     <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
                 </div>
             </li>
             <li>
-                <img src="Technology-Consultant02.jpg"> <!-- random image -->
+                <img src="people-playing-dnd.png.webp"> <!-- random image -->
                 <div class="caption left-align">
-                    <h1>Left Aligned Caption</h1>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <h1>A Few Of My Interests Include</h1>
+                    <h5 class="light grey-text text-lighten-3">Dungeons And Dragons</h5>
                     <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
 
                 </div>
             </li>
             <li>
-                <img src="Technology-Consultant03.jpg"> <!-- random image -->
+                <img src="game.jpg"> <!-- random image -->
                 <div class="caption right-align">
-                    <h1>Right Aligned Caption</h1>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <h1>A Few Of My Interests Include</h1>
+                    <h5 class="light grey-text text-lighten-3">Video And Board Games</h5>
                     <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
                 </div>
             </li>
@@ -187,18 +191,19 @@
         </div>
     </section>
 
-  <section>
-      <div class="container">
-  <div class="row">
-      <h2>About Me</h2>
-  </div>
-   <div class="row">
-       <p>My name is Cody Wilson, I'm a freshman at Miami. I just graduated from Valley View High School last year, which is around 40 minutes away from Oxford, Ohio. I've lived in Ohio my whole life, and I am majoring in Games + Simulation. Some college clubs I'm involved in are MU Meeples, Role-Playing Guild, and MU Smash. Some of my personal hobbies include hanging out with friends, playing video games, and playing the Alto Saxophone. I was in my school's Symphonic Band program all the way from 5th grade to senior year, so I have spent a large part of my life playing music.</p>
-   </div>
-   </div>
-      
-  </section>
-   
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2>About Me</h2>
+            </div>
+            <img src=Cody%20Headshot.jpg>
+            <div class="row">
+                <p>My name is Cody Wilson, I'm a freshman at Miami. I just graduated from Valley View High School last year, which is around 40 minutes away from Oxford, Ohio. I've lived in Ohio my whole life, and I am majoring in Games + Simulation. Some college clubs I'm involved in are MU Meeples, Role-Playing Guild, and MU Smash. Some of my personal hobbies include hanging out with friends, playing video games, and playing the Alto Saxophone. I was in my school's Symphonic Band program all the way from 5th grade to senior year, so I have spent a large part of my life playing music.</p>
+            </div>
+        </div>
+
+    </section>
+
     <!-- social media -->
     <section class="section section-follow black darken-2 white-text center">
         <div class="container">
@@ -228,10 +233,10 @@
     </section>
     <!-- contact us -->
     <section id="contact" class="section section-contact scrollspy">
-       <h2 style="text-align: center">Contact Us</h2>
+        <h2 style="text-align: center">Contact Us</h2>
         <div class="container">
             <div class="row">
-                <form action="" method="POST" class="col s12">
+                <form action="https://formsubmit.co/wilso874@miamioh.edu" method="POST" class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">account_circle</i>
@@ -242,6 +247,7 @@
                             <i class="material-icons prefix">email</i>
                             <input id="icon_prefix" type="text" name="email" class="validate">
                             <label for="icon_prefix">Email</label>
+                            <label for="icon_prefix">Email</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">phone</i>
@@ -249,17 +255,18 @@
                             <label for="icon_telephone">Telephone</label>
                         </div>
                         <div class="input-field col s6">
+
                             <i class="material-icons prefix">today</i>
-                            <input id="icon_telephone" type="tel" class="validate" name="phone">
-                            <label for="icon_telephone">Send Date To Contact</label>
+                            <input id="icon_telephone" type="date" class="validate" name="date">
+                            <label for="icon_telephone">Best Date To Contact</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">message</i>
                             <textarea id="textarea1" class="materialize-textarea" name="comment"></textarea>
-                            <label for="textarea1">Textarea</label>
+                            <label for="textarea1">Text Area</label>
                         </div>
                     </div>
-                    <input type="submit" value="Submit" class="black btn-large">
+                    <input  type="submit" value="Submit" class="black btn-large">
                 </form>
             </div>
         </div>
@@ -299,5 +306,4 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+</body></html>
